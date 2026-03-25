@@ -1,0 +1,72 @@
+.attendance-page {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.attendance-header {
+  margin-bottom: 1.5rem;
+}
+
+.attendance-header h2 {
+  margin: 0 0 0.3rem;
+  font-size: 2rem;
+  color: #1d5f2f;
+}
+
+.attendance-header p {
+  margin: 0;
+  color: #2f6338;
+}
+
+.error {
+  color: #b33;
+  margin: 1rem 0;
+}
+
+.attendance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.attendance-card {
+  background: #f0fff4;
+  border: 1px solid #d0f0d8;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 12px 19px rgba(26, 72, 43, 0.1);
+}
+
+.attendance-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.attendance-card p {
+  margin: 0.3rem 0;
+}
+
+.status {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.85rem;
+}
+
+.status.present {
+  background: #d4f7dc;
+  color: #0b8a3e;
+  border: 1px solid #88d799;
+}
+
+.status.absent {
+  background: #ffe5e5;
+  color: #ba1c1c;
+  border: 1px solid #f8948a;
+}
+
+

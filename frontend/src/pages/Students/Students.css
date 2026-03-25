@@ -1,0 +1,141 @@
+.students-page-container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.students-title {
+  font-size: 2rem;
+  color: #1f6f38;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.students-form {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  border: 1px solid #d9e5df;
+  border-radius: 10px;
+  background: #ffffff;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.students-form h3 {
+  margin: 0 0 1rem;
+  color: #2f6f2d;
+}
+
+.student-input,
+.student-select {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  margin: 0.45rem 0;
+  border-radius: 8px;
+  border: 1px solid #c4d8cc;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-input:focus,
+.student-select:focus {
+  outline: none;
+  border-color: #1f6f38;
+  box-shadow: 0 0 0 3px rgba(31, 111, 56, 0.17);
+}
+
+.action-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.action-btn {
+  background: #1f6f38;
+  color: white;
+  margin-right: 0.6rem;
+}
+
+.cancel-btn {
+  background: #6b6b6b;
+  color: white;
+}
+
+.action-btn:hover,
+.cancel-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.student-list-title {
+  margin: 0 0 0.8rem;
+  color: #115f2c;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2eee2;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 3px 10px rgba(31, 111, 56, 0.08);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.student-info {
+  color: #334f39;
+}
+
+.student-actions button {
+  margin-left: 0.5rem;
+}
+
+.edit-btn {
+  background: #f8f9fa;
+  color: #1f6f38;
+  border: 1px solid #1f6f38;
+}
+
+.delete-btn {
+  background: #ef4f4f;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .students-page-container { padding: 1rem; }
+  .student-card { flex-direction: column; align-items: flex-start; }
+  .student-actions { margin-top: 0.65rem; width: 100%; display: flex; gap: 0.5rem; }
+  .student-actions button { flex: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

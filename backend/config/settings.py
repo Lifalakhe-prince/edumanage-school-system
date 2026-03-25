@@ -44,6 +44,14 @@ INSTALLED_APPS = [
     'students',  
     'teachers',
     "corsheaders",
+    'subjects',
+    'classes',
+    'attendance',
+    'exams',
+    'results',
+    'fees',
+    'accounts',
+    
 ]
 
 MIDDLEWARE = [
@@ -127,4 +135,7 @@ STATIC_URL = 'static/'
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
 
